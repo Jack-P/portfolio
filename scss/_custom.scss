@@ -1,0 +1,21 @@
+body {overflow-x: hidden;}
+
+.grid-container {
+	background: #ccc;
+	.top-nav {
+		h5 {
+			display: inline-block;
+			padding: 10px 15px;
+		}
+		a.contact {
+			float: right;
+			display: inline-block;
+			margin: 5px 10px;
+			padding: 10px 15px;
+			border: 1px solid #000;
+		}
+	}
+	.profile {
+		text-align:center;
+	}
+}
