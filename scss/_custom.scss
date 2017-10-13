@@ -1,4 +1,5 @@
-body {overflow-x: hidden;}
+
+// body {overflow-x: hidden;}
 
 .grid-container {
 	background: #ccc;
@@ -16,6 +17,7 @@ body {overflow-x: hidden;}
 		}
 	}
 	.profile {
-		text-align:center;
+		padding: 50px 50px;
+		text-align: left;
 	}
 }
