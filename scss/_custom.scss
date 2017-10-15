@@ -1,23 +1,38 @@
 
-// body {overflow-x: hidden;}
+body {
+	// overflow-x: hidden!important;
+	background: #222427!important;
+	color: #f2f2f2!important;
+	font-family: Raleway;
+	line-height: 1.7;
 
-.grid-container {
-	background: #ccc;
-	.top-nav {
-		h5 {
-			display: inline-block;
-			padding: 10px 15px;
-		}
-		a.contact {
-			float: right;
-			display: inline-block;
-			margin: 5px 10px;
-			padding: 10px 15px;
-			border: 1px solid #000;
-		}
+	a,h1,h2,h3,h4,h5,h6 {
+		font-family: Ubuntu;
+		font-weight: 700;
+		color: #f2f2f2;
 	}
-	.profile {
-		padding: 50px 50px;
-		text-align: left;
+
+	.grid-container {
+		background: #33363a;
+		.top-nav {
+			h5 {
+				display: inline-block;
+				padding: 10px 15px;
+			}
+			a.contact {
+				float: right;
+				display: inline-block;
+				margin: 5px 10px;
+				padding: 10px 15px;
+				border: 1px solid #000;
+			}
+		}
+		.item {
+			padding: 50px 50px 50px 50px;
+			text-align: left;
+		}
+		.item-img {
+			padding: 0 50px 50px 50px;
+		}
 	}
 }
