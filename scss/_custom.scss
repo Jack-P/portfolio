@@ -1,19 +1,25 @@
 
 body {
 	// overflow-x: hidden!important;
-	background: #222427!important;
+	// background: #222427!important;
+	background: #33363a!important;
 	color: #f2f2f2!important;
-	font-family: Raleway;
+	font-family: Montserrat;
 	line-height: 1.7;
 
-	a,h1,h2,h3,h4,h5,h6 {
-		font-family: Ubuntu;
-		font-weight: 700;
+	a {
 		color: #f2f2f2;
 	}
 
+	h1,h2,h3,h4,h5,h6 {
+		font-family: Asap;
+		font-weight: 700;
+		color: #f2f2f2;
+		margin-bottom: 25px;
+	}
+
 	.grid-container {
-		background: #33363a;
+		// background: #33363a;
 		.top-nav {
 			h5 {
 				display: inline-block;
@@ -34,5 +40,8 @@ body {
 		.item-img {
 			padding: 0 50px 50px 50px;
 		}
+		.centered {
+			text-align: center;
+		}		
 	}
 }
