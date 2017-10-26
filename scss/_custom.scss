@@ -1,14 +1,17 @@
-
 body {
 	// overflow-x: hidden!important;
 	// background: #222427!important;
 	background: #33363a!important;
 	color: #f2f2f2!important;
 	font-family: Montserrat;
-	line-height: 1.7;
+	// line-height: 1.7!important;
 
 	a {
 		color: #f2f2f2;
+		transition: 0.3s ease-in-out; 
+		&:hover {
+			color: $link-hover;
+		}
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -18,23 +21,50 @@ body {
 		margin-bottom: 25px;
 	}
 
+	p {
+		line-height: 2.1;
+		font-size: 1.06em;
+		margin-bottom: 30px;
+	}
+
+	.section {
+			background: $dark;
+		}
+
 	.grid-container {
 		// background: #33363a;
+
+		// Top Navigation +++++++++++++++++++++++++++++
 		.top-nav {
 			h5 {
 				display: inline-block;
 				padding: 10px 15px;
 			}
-			a.contact {
-				float: right;
-				display: inline-block;
-				margin: 5px 10px;
-				padding: 10px 15px;
-				border: 1px solid #000;
+			.nav {
+				padding: 30px 50px 5px 0;
+
+					a.contact {
+					font-family: Asap;
+					float: right;
+					display: inline-block;
+					margin: 5px 10px;
+					padding: 5px 10px;
+					// border-bottom: 2px solid #fff;
+					border-width: 90%;
+					transition: 0.3s ease-in-out; 
+					&:hover {
+						color: $link-hover;
+					}
+				}
 			}
+			
+		}
+		// USEFULS +++++++++++++++++++++++++++++
+		.break {
+			margin-bottom: 5%;
 		}
 		.item {
-			padding: 50px 50px 50px 50px;
+			padding: 60px 50px 50px 50px;
 			text-align: left;
 		}
 		.item-img {
@@ -42,6 +72,37 @@ body {
 		}
 		.centered {
 			text-align: center;
+		}
+		.align-right {
+			text-align: right;
+		}
+		.pad {
+			padding: 50px;
+		}
+		.no-pad {
+			padding: 0!important;
+		}
+		.blockquote {
+			border-left: 4px solid #fff;
+			padding: 0 0 0 20px;
+		}
+
+		// Main Content +++++++++++++++++++++++++++++
+		.skills {
+			img{
+				width: 100px;
+				margin: 15px 0;
+				border-radius: 5px;
+			}
+		}
+		.fact {
+			margin: 2em 0em 0em;
 		}		
+	}
+
+	footer {
+		height: 150px;
+		padding: 65px 20px;
+		background: $dark;
 	}
 }
