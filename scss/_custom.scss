@@ -7,10 +7,17 @@ body {
 	// line-height: 1.7!important;
 
 	a {
+		display: inline-block;
 		color: #f2f2f2;
 		transition: 0.3s ease-in-out; 
 		&:hover {
 			color: $link-hover;
+		}
+		&:active {
+			color: #f2f2f2;
+		}
+		&:visited {
+			color: #f2f2f2;
 		}
 	}
 
@@ -41,7 +48,7 @@ body {
 				padding: 10px 15px;
 			}
 			.nav {
-				padding: 30px 50px 5px 0;
+				padding: 30px 50px 5px 50px;
 
 					a.contact {
 					font-family: Asap;
@@ -70,6 +77,11 @@ body {
 		.item-img {
 			padding: 0 50px 50px 50px;
 		}
+		.shadow {
+			-webkit-box-shadow: -1px 0px 20px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: -1px 0px 20px 5px rgba(0,0,0,0.75);
+			box-shadow: -1px 0px 20px 5px rgba(0,0,0,0.75);
+		}
 		.centered {
 			text-align: center;
 		}
@@ -97,12 +109,73 @@ body {
 		}
 		.fact {
 			margin: 2em 0em 0em;
-		}		
+		}
+		// Animations +++++++++++++++++++++++++++++
+		.ani-enlarge {
+			overflow: hidden;
+			img {
+				transform: scale(1.01);
+				transition: 0.2s ease-in-out;
+
+				&:hover{
+				transform: scale(1.06);
+				}
+			}
+			// transition: 0.2s ease-in-out;
+
+			// &:hover{
+			// 	transform: scale(1.00);
+			// }
+		}
+		.ani-bounceUp {
+
+		}
+		.animated {
+		  animation-duration: 1s;
+		  animation-fill-mode: both;
+		}
+		@keyframes bounceUp {
+		  20% {
+		    transform: translate3d(0, -10px, 0);
+		  }
+
+		  40%, 45% {
+		    opacity: 1;
+		    transform: translate3d(0, 60px, 0);
+		  }
+
+		  to {
+		    opacity: 0;
+		    transform: translate3d(0, -2000px, 0);
+		  }
+		}
+
+		.bounceUp {
+		  animation-name: bounceUp;
+		}
 	}
 
 	footer {
-		height: 150px;
-		padding: 65px 20px;
+		// height: 60px;
+		// padding: 65px 20px;
 		background: $dark;
+		p {
+			padding: 10px;
+			margin-bottom: 0;
+		}
+		div.wrap {
+			padding: 3px 0;
+			margin: 0;
+		}
+		a {
+			font-size: 1em;
+			
+			.icon-space {
+				font-size: 2em;
+				&:first-child {
+					margin-right: 15px;
+				}
+			}
+		}
 	}
 }
