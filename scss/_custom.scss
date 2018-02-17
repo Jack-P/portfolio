@@ -11,7 +11,6 @@ body {
 	min-height: 100%;
 	background: #33363a!important;
 	color: #f2f2f2!important;
-	font-family: Montserrat;
 	// line-height: 1.7!important;
 
 	a {
@@ -22,10 +21,13 @@ body {
 			color: $link-hover;
 		}
 		&:active {
-			color: #f2f2f2;
+			color: $link-hover;
 		}
 		&:visited {
 			color: #f2f2f2;
+		}
+		&:focus {
+			color: #f2f2f2!important;
 		}
 	}
 
@@ -154,8 +156,14 @@ body {
 			margin: 0;
 		}
 		.blockquote {
+			margin-left: 20px;
 			border-left: 4px solid #fff;
-			padding: 0 0 0 20px;
+			padding: 20px;
+			border-radius: 3px;
+			background: #26282B;
+		}
+		.label {
+			background: rgba(20, 218, 155, 0.6)!important;
 		}
 
 		// Main Content +++++++++++++++++++++++++++++
@@ -183,7 +191,7 @@ body {
 		.visit-two {
 			position: absolute;
 			right:0;
-			top:10px;
+			top:64px;
 			padding: 10px 15px;
 			background: transparent;
 			border: 1px solid $green;
@@ -212,6 +220,11 @@ body {
 				display: inline-block;
 				position: relative;
 				top: 5px;
+		}
+		.tags {
+			h6 {
+				display: inline-block;
+			}
 		}
 		// Animations +++++++++++++++++++++++++++++
 		.ani-enlarge {
@@ -341,10 +354,13 @@ body {
 		}
 		.grid-container{
 			.top-nav {
+
 				h3 {
 					display: none;	
 				}
 				.nav {
+					display: flex!important;
+					justify-content: center!important;
 					text-align: center!important;
 					padding: 10px 0;
 
@@ -398,6 +414,30 @@ body {
 			}
 			.visit-two {
 				display: none;
+			}
+			.blockquote {
+				margin-left: 0px;
+				padding: 20px;
+				border-left: 3px solid #fff;
+			}
+			.mobile-space {
+				margin-bottom: 25px;
+			}
+			.tags {
+				h6 {
+					display: block;
+				}
+				.label {
+					margin-bottom: 3px;
+				}
+			}
+			#anki {
+				max-width: 350px;
+				width: 100%;
+			}
+			#canvas {
+				max-width: 1040px!important;
+				width: 100%!important;
 			}
 			ul {
 				li {
@@ -460,6 +500,9 @@ body {
 					padding: 0 10px;
 				}
 			}
+			.medium-no-pad-top {
+				padding-top: 0!important;
+			}
 			.division {
 				padding: 90px 0 100px 0;
 			}
@@ -490,6 +533,10 @@ body {
 			}
 			.visit-two {
 				display: none;
+			}
+			#canvas {
+				max-width: 1040px!important;
+				width: 100%!important;
 			}
 			ul {
 				li {
